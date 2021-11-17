@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Es mīlu Latviju</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="header">
+        <h1>Sveicieni Latvijai svētkos!</h1>
+        <h2>Uzspēlē spēli!</h2><br>
+        <p>Atver visas zvaigznītes un zem tām novieto pareizo bildi!</p><br>
+    <div class="btnBox">
+        <button class="btnBack" onclick="location.href='index.html'" type="button">Atpakaļ</button>
+        <button class="btnBack" type="button" value="Reset" id="reset" onclick="reset1();">Jauna spēle</button>
+    </div>
+</div>
+    
+<div class="allCards">
+    <div class='flip-card'>
+        <div class="flip-card-inner" id='card'>
+            <div class="flip-card-front">
+                <img src="images/star.jpg"  width="100px" height="auto">
+            </div>
+            <div class="flip-card-back">
+                <img src="images/card1.jpg"  width="100px" height="100px" id="facesOne">
+            </div>
+        </div>
+    </div>
+
+    <div class='flip-card'>
+        <div class="flip-card-inner" id='cardTwo'>
+            <div class="flip-card-front">
+                <img src="images/star.jpg"  width="100px" height="auto">
+            </div>
+            <div class="flip-card-back">
+                <img src="images/card3.jpg"  width="100px" height="100px" id="facesTwo">
+            </div>
+        </div>
+    </div>
+
+    <div class='flip-card'>
+        <div class="flip-card-inner" id='cardThree'>
+            <div class="flip-card-front">
+                <img src="images/star.jpg"  width="100px" height="auto">
+            </div>
+            <div class="flip-card-back">
+                <img src="images/card2.jpg"  width="100px" height="100px">
+            </div>
+        </div>
+    </div>
+</div>   
+
+<div class="wrapperboxes" id="game1">
+    <div>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div><br>
+        <img src="images/card1.jpg"  id="drag2"  draggable="true" ondragstart="drag(event)" width="100px" height="100px">
+    </div>
+
+    <div>
+        <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div><br>
+        <img src="images/card2.jpg"  id="drag1"  draggable="true" ondragstart="drag(event)" width="100px" height="100px">
+    </div>
+
+    <div>
+        <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div><br>
+        <img src="images/card3.jpg"  id="drag3"  draggable="true" ondragstart="drag(event)" width="100px" height="100px">
+    </div>
+</div>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
